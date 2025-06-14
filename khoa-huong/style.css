@@ -1609,7 +1609,26 @@ background-color: var(--primary-color);
         font-size: .4em;
     }
     .lb3-top{
-        font-size: .6em;
+        font-size: 1em;
+    }
+    .lb5-p2{
+        font-size: 1.3em;
+    }
+    .lb6-p2{
+        font-size: .55em;
+    }
+
+    .lb6-p2-con{
+        font-size: .45em;
+    }
+    .lb-thamdu{
+        font-size: 2.5em;
+    }
+    .lb-thamdu-con{
+        font-size: 1.5em;
+    }
+    .box-contact{
+        padding: 80px 30px;
     }
   }
   
