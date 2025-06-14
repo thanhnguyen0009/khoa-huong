@@ -1608,18 +1608,21 @@ background-color: var(--primary-color);
     .lb-acc{
         font-size: .4em;
     }
+    .lb1-top{
+        font-size: 3em;
+    }
     .lb3-top{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .lb5-p2{
         font-size: 1.3em;
     }
     .lb6-p2{
-        font-size: .55em;
+        font-size: .5em;
     }
 
     .lb6-p2-con{
-        font-size: .45em;
+        font-size: .4em;
     }
     .lb-thamdu{
         font-size: 2.5em;
