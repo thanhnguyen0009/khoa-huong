@@ -416,8 +416,9 @@
 
 .lb1-top{
     margin-top: 200px;
-    font-size: 4em;
+    font-size: 3.5em;
     letter-spacing: 2px;
+    text-transform: uppercase;
     font-family: var(--font-mtd);
 }
 
@@ -487,6 +488,7 @@
     font-family: var(--font-gotham);
     font-size: .6em;
     margin-top: 50px;
+    font-weight: 300;
 }
 
 .lb3-p1{
@@ -586,21 +588,21 @@
 .lb3-p2{
     font-family: var(--font-gotham);
     font-size: .8em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-top: 30px;
 }
 
 .lb4-p2{
     font-family: var(--font-gotham);
     font-size: .7em;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 10px;
 }
 
 .lb4-p2-con{
     font-family: var(--font-gotham);
     font-size: .6em;
-    font-weight: 400;
+    font-weight: 300;
     font-style: italic;
     margin-top: 50px;
 }
@@ -620,14 +622,16 @@
 
 .lb6-p2{
     font-family: var(--font-gotham);
-    font-size: .65em;
-    margin-top: 5px;
+    font-size: .6em;
+    margin-top: 20px;
+    font-weight: 300;
 }
 
 .lb6-p2-con{
     font-family: var(--font-gotham);
-    font-size: .55em;
+    font-size: .5em;
     font-style: italic;
+    font-weight: 300;
 }
 
 .img-table{
@@ -758,7 +762,7 @@
     font-family: var(--font-gotham);
     font-size: .6em;
     padding: 0 40px;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 50px;
     line-height: 13px;
 }
@@ -768,6 +772,7 @@
     font-size: .5em;
     font-weight: 300;
     font-style: italic;
+    margin-top: 10px;
 }
 
 .p-con{
@@ -824,6 +829,95 @@
 
 
 
+/* ==================PLANE=============== */
+
+.plane{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-gotham);
+    padding: 0 20px;
+}
+
+.lb-plane1{
+    font-weight: 600;
+    font-size: .8em;
+    margin-top: 50px;
+}
+
+.p-plane1{
+    font-size: .8em;
+    font-weight: 300;
+    line-height: 19px;
+    margin-top: 10px;
+}
+
+.lb-plane2{
+    font-weight: 600;
+    font-size: .7em;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.p-plane2{
+    font-size: .6em;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+.btn-plane{
+    text-decoration: none;
+    padding: 6px 20px;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 20px;
+    font-size: .7em;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+
+/* ============ROOM================= */
+
+.room{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-gotham);
+    padding: 0 20px;
+}
+
+.box-room{
+    background-image: url('./anh/back-contact-04.png');
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.img-room{
+    width: 30%;
+    margin:  30px 0;
+}
+
+.lb-room1{
+    font-size: .8em;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.lb-room2{
+    font-size: .65em;
+    font-weight: 300;
+    font-style: italic;
+}
+
 /* ====FORM+============== */
 
 /* #xac-nhan{
@@ -866,6 +960,12 @@ form{
     line-height: 30px;
 }
 
+hr{
+    width: 350px;
+    background: #111;
+    margin-top: 40px;
+}
+
 .fa-diamond{
     font-size: .7em;
     margin-top: 50px;
@@ -898,7 +998,7 @@ form{
 .in-fe2{
     font-family: var(--font-gotham);
     font-size: .7em;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .con-in-fe2{
