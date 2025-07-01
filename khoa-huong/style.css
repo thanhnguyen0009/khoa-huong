@@ -204,64 +204,69 @@
 
 
 /* Hiệu ứng fade-down */
-.lb1-top, .lb2-top, .lb2-top-con, .lb3-top, .lb4-top, .lb4-top-con, .lb5-p2, .lb6-p2, .lb6-p2-con, .lb1-p3, .lb1-p3-con{
+.lb1-top, .lb2-top, .lb2-top-con, .lb3-top, .lb4-top, .lb4-top-con,
+ .lb5-p2, .lb6-p2, .lb6-p2-con, .lb1-p3, .lb1-p3-con, 
+ .lb-room1, .lb-room2{
     transform: translateY(-50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1.3s, opacity 1.3s; /* Tăng từ 0.5s lên 1.3s */
 }
 
 .lb1-top.visible, .lb2-top.visible, .lb2-top-con.visible, .lb3-top.visible, .lb4-top.visible, .lb4-top-con.visible, 
-.lb5-p2.visible, .lb6-p2.visible, .lb6-p2-con.visible, .lb1-p3.visible, .lb1-p3-con.visible {
+.lb5-p2.visible, .lb6-p2.visible, .lb6-p2-con.visible, 
+.lb1-p3.visible, .lb1-p3-con.visible, .lb-room1.visible,
+.lb-room2.visible {
     transform: translateY(0);
     opacity: 1;
 }
 
 /* Hiệu ứng fade-up */
 .lb2-p1, .lb3-p1, .lb3-p1-con, .in-fe, .container-check, .inp-ten, .lb-text, #loi-chuc, .lb4-p2, .lb4-p2-con, 
-.p-p3, .p-p3-con, .p-con, .in-fe2, .con-in-fe2 {
+.p-p3, .p-p3-con, .p-con, .in-fe2, .con-in-fe2, .in-fe-con {
     transform: translateY(50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1.3s, opacity 1.3s; /* Tăng từ 0.5s lên 1.3s */
 }
 
 .lb2-p1.visible, .lb3-p1.visible, .lb3-p1-con.visible, .in-fe.visible, .container-check.visible, .inp-ten.visible, 
-.lb-text.visible, #loi-chuc.visible, .lb4-p2.visible, .lb4-p2-con.visible, .p-p3.visible, .p-p3-con.visible, .p-con.visible, .in-fe2.visible, .con-in-fe2.visible {
+.lb-text.visible, #loi-chuc.visible, .lb4-p2.visible, .lb4-p2-con.visible, .p-p3.visible, .p-p3-con.visible,
+ .p-con.visible, .in-fe2.visible, .con-in-fe2.visible, .in-fe-con.visible {
     transform: translateY(0);
     opacity: 1;
 }
 
 /* Hiệu ứng fade-right */
-.info2 {
+.info2, .img-cd-cr, .lb-plane1, .lb-plane2 {
     transform: translateX(-50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1.3s, opacity 1.3s; /* Tăng từ 0.5s lên 1.3s */
 }
 
-.info2.visible {
+.info2.visible, .img-cd-cr.visible, .lb-plane1.visible, .lb-plane2.visible {
     transform: translateX(0);
     opacity: 1;
 }
 
 /* Hiệu ứng fade-left */
-.lb4-p1, .lb5-p1{
+.lb4-p1, .lb5-p1, .lb2-p2, .p-plane1, .p-plane2{
     transform: translateX(50px);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1.3s, opacity 1.3s; /* Tăng từ 0.5s lên 1.3s */
 }
 
-.lb4-p1.visible, .lb5-p1.visible {
+.lb4-p1.visible, .lb5-p1.visible, .lb2-p2.visible, .p-plane1.visible, .p-plane2.visible {
     transform: translateX(0);
     opacity: 1;
 }
 
 /* Hiệu ứng zoom-in */
-.img-p1-top,  .img-timeline, .img-maps, .til1, .til2, .img-time, .box-album2, .xacnhan, .lb3-p2, .img-table {
+.img-p1-top,  .img-timeline, .img-maps, .til1, .til2, .img-time, .box-album2, .xacnhan, .lb3-p2, .img-table, .img-ten {
     transform: scale(0.5);
     opacity: 0;
-    transition: transform 1s, opacity 1s; /* Tăng từ 0.5s lên 1s */
+    transition: transform 1.3s, opacity 1.3s; /* Tăng từ 0.5s lên 1.3s */
 }
 
-.img-p1-top.visible, .img-timeline.visible, .img-maps.visible, .til1.visible, .til2.visible, .img-time.visible, .box-album2.visible, .xacnhan.visible, .lb3-p2.visible, .img-table.visible {
+.img-p1-top.visible, .img-timeline.visible, .img-maps.visible, .til1.visible, .til2.visible, .img-time.visible, .box-album2.visible, .xacnhan.visible, .lb3-p2.visible, .img-table.visible, .img-ten.visible {
     transform: scale(1);
     opacity: 1;
 }
@@ -429,6 +434,11 @@
     font-weight: 300;
 }
 
+.img-ten{
+    width: 80% ;
+    margin-top: 30px;
+}
+
 .lb2-top-con{
     font-family: var(--font-gotham);
     font-size: .7em;
@@ -502,6 +512,13 @@
     font-size: .7em;
     font-weight: 300;
     font-style: italic;
+}
+.cd-cr{
+    margin-top: 30px ;
+}
+
+.img-cd-cr{
+    width: 80%;
 }
 
 
@@ -625,6 +642,7 @@
     font-size: .6em;
     margin-top: 20px;
     font-weight: 300;
+    line-height: 17px;
 }
 
 .lb6-p2-con{
@@ -660,6 +678,17 @@
     text-decoration: none;
     color: var(--primary-color);
     margin-top: 20px;
+     display: inline-block; /* Ensures the button respects transform */
+    animation: bubbleZoom 1.5s infinite ease-in-out; /* Applies the animation */
+}
+
+@keyframes bubbleZoom {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in slightly */
+    }
 }
 
 .con-map{
@@ -777,8 +806,8 @@
 
 .p-con{
     font-family: var(--font-gotham);
-    font-size: .5em;
-    font-weight: 400;
+    font-size: .55em;
+    font-weight: 300;
     padding: 0 40px;
     font-style: italic;
     margin-top: 15px;
@@ -843,12 +872,12 @@
 
 .lb-plane1{
     font-weight: 600;
-    font-size: .8em;
+    font-size: .6em;
     margin-top: 50px;
 }
 
 .p-plane1{
-    font-size: .8em;
+    font-size: .6em;
     font-weight: 300;
     line-height: 19px;
     margin-top: 10px;
@@ -869,15 +898,26 @@
     margin-top: 10px;
 }
 
-.btn-plane{
+.btn-plane {
     text-decoration: none;
     padding: 6px 20px;
     color: #fff;
     background: var(--primary-color);
     border-radius: 20px;
-    font-size: .7em;
+    font-size: .6em;
     font-weight: 300;
     margin-top: 50px;
+    display: inline-block; /* Ensures the button respects transform */
+    animation: bubbleZoom 1.5s infinite ease-in-out; /* Applies the animation */
+}
+
+@keyframes bubbleZoom {
+    0%, 100% {
+        transform: scale(.9); /* Normal size */
+    }
+    50% {
+        transform: scale(1); /* Zoom in slightly */
+    }
 }
 
 
@@ -891,13 +931,14 @@
     text-align: center;
     font-family: var(--font-gotham);
     padding: 0 20px;
+    margin-top: 30px;
 }
 
 .box-room{
     background-image: url('./anh/back-contact-04.png');
     background-position: bottom;
     background-size: cover;
-    width: 100%;
+    width: 80%;
     margin-top: 50px;
 }
 
@@ -907,13 +948,13 @@
 }
 
 .lb-room1{
-    font-size: .8em;
+    font-size: .6em;
     font-weight: 300;
     margin-top: 50px;
 }
 
 .lb-room2{
-    font-size: .65em;
+    font-size: .55em;
     font-weight: 300;
     font-style: italic;
 }
@@ -1585,7 +1626,27 @@ background-color: var(--primary-color);
     border: none;
     background: none;
     cursor: pointer;
-  }
+    background-color: var(--primary-color);
+    padding: 4px 30px 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    color: #fff;
+    font-family: var(--font-gotham);
+    font-size: .6em;
+    font-weight: 300;
+    margin-top: 10px; display: inline-block; /* Ensures the button respects transform */
+    animation: bubbleZoom 1.5s infinite ease-in-out; /* Applies the animation */
+}
+
+@keyframes bubbleZoom {
+    0%, 100% {
+        transform: scale(.9); /* Normal size */
+    }
+    50% {
+        transform: scale(1); /* Zoom in slightly */
+    }
+}
+  
   
   /* Modal Overlay Styles */
   .modal-overlay {
