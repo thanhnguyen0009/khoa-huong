@@ -405,7 +405,8 @@
     width: 100%;
 }
 
-.top{
+.top {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this container */
     background-image: url('./anh/1.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -419,8 +420,24 @@
     font-family: var(--font-ftv);
 }
 
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Place overlay behind content */
+}
+
+.top > * {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
 .lb1-top{
-    margin-top: 200px;
+    margin-top: 50px;
     font-size: 3.5em;
     letter-spacing: 2px;
     text-transform: uppercase;
