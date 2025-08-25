@@ -1055,7 +1055,7 @@ hr{
 
 .in-fe2{
     font-family: var(--font-gotham);
-    font-size: .7em;
+    font-size: .6em;
     margin-top: 10px;
 }
 
@@ -1755,6 +1755,9 @@ background-color: var(--primary-color);
         width: 40%;
     }
     .in-fe, .in-fe2{
+        font-size: .45em;
+    }
+    .in-fe-con{
         font-size: .45em;
     }
     .lb-line1, .lb-name{
